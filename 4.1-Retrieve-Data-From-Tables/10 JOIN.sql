@@ -1,3 +1,5 @@
+-- EventName and CountryName only
+
 SELECT EventName, CountryName 
 FROM Event
 JOIN Country
