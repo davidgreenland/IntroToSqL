@@ -1,7 +1,7 @@
 -- Add a new column to Category, ‘Description'. with default value 'test’. Remove column
 
 ALTER TABLE Category
-ADD Description varchar(max) 
+ADD Description varchar(max) NOT NULL
 CONSTRAINT DF__Category__Description DEFAULT 'test'
 
 BEGIN TRANSACTION
