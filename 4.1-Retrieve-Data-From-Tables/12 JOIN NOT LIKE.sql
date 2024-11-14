@@ -7,5 +7,5 @@ JOIN Category
 	ON Event.CategoryId = Category.Id
 JOIN Continent
  	ON Country.ContinentId = Continent.Id
-WHERE EventDate BETWEEN '1900' AND '1999'
+WHERE EventDate BETWEEN '1900-01-01' AND '1999-12-31'
 AND ContinentName NOT LIKE 'Europe';
