@@ -7,6 +7,10 @@ BEGIN TRANSACTION
 	UPDATE Event
 		SET CategoryId = 2
 		WHERE EventId = 99
+		
+SELECT * FROM Event
+WHERE EventId = 99
+
 ROLLBACK
 
 SELECT * FROM Event
