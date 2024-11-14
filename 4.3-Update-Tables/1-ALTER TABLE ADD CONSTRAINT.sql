@@ -1,4 +1,4 @@
--- Add a new column to Category, ‘Description'. with default value 'test’. Remove column
+-- Add a new column to Category, â€˜Description'. with default value 'testâ€™. Remove column
 
 ALTER TABLE Category
 ADD Description varchar(max) NOT NULL
@@ -8,7 +8,7 @@ BEGIN TRANSACTION
 	INSERT INTO Category (CategoryName)
 		VALUES ('Trumpeting')
 
-SELECT * FROM Category;
+SELECT * FROM Category
 
 ROLLBACK
 
